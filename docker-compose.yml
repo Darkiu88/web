@@ -1,0 +1,28 @@
+version: '3.9'
+
+services:
+  web:
+    build: .
+    container_name: django_web
+    ports:
+      -"8000:8000"
+    volumes:
+      -.:/app
+    env_file:
+      - .venv
+    depends_on:
+      - db
+
+db: 
+  image: postgres:15
+  container_name: postgres_db
+  restart: always 
+  environment: 
+    POSTGRES_DB: panel_db
+    POSTGRES_USER: admin
+    POSTGRES_PASSWORD: admin123
+  volumens:
+    - pgdata:/var/lib/postgresql/data
+
+volumens:
+  postgres_data:

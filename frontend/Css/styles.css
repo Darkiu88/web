@@ -1,0 +1,24 @@
+body{
+    background-color: #0A0A0A;
+    color: #7BB497;
+}
+.title{
+    background-color: #133524;
+    color: #7BB497;
+}
+div{
+    border-radius: 10px;
+    
+    border: 1px solid #7BB497; 
+    padding: 10px;
+}
+footer{
+    border-radius: 10px;
+    
+    border: 1px solid #7BB497;
+    color: #7BB497;
+}
+.Fecha{
+    padding: 40px;
+}
+
