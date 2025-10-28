@@ -1,24 +1,90 @@
-body{
+body {
     background-color: #0A0A0A;
     color: #7BB497;
 }
-.title{
+
+.title {
     background-color: #133524;
+    width: 120px;
+    height: 50px;
     color: #7BB497;
-}
-div{
+    align-items: center;
+    justify-content: center;
+    display: flex;
     border-radius: 10px;
-    
-    border: 1px solid #7BB497; 
-    padding: 10px;
-}
-footer{
-    border-radius: 10px;
-    
     border: 1px solid #7BB497;
-    color: #7BB497;
-}
-.Fecha{
-    padding: 40px;
 }
 
+/* Estilos específicos para cada div */
+.Clima, .agenda, .terminal, .Estado_del_Servidor {
+    border-radius: 10px;
+    border: 1px solid #7BB497; 
+    padding: 10px;
+    margin-bottom: 10px; /* opcional para separar los divs */
+}
+
+footer {
+    border-radius: 10px;
+    border: 1px solid #7BB497;
+    color: #7BB497;
+    padding: 10px;
+    text-align: center;
+}
+
+.Fecha {
+    padding: 40px;
+    width: 10px;
+    height: 10px;
+}
+
+
+.nav_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    border-bottom: 2px solid #000;
+}
+.nav_links{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+.nav_link{
+    text-decoration: none;
+    color: #7BB497;
+    padding: 5px 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav_link:hover{
+    background-color: #133524;
+    border-radius: 5px;
+    border: 2px solid #7BB497;
+}
+
+.nav_link button {
+    background-color: #000;
+    color: #7BB497;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+
+.nav_link button:hover {
+    background-color: #133524;
+    border-color: #133524;
+}
+
+.footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
